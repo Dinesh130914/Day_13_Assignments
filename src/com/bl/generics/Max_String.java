@@ -6,22 +6,21 @@ public class Max_String {
 		String a = "Apple";
 		String b = "Peach";
 		String c = "Banana";
-		findstring(a, b, c);
+		String obj=findstring(a, b, c);
+		System.out.println("Maximum String is :"+obj);
 		
 	}
 	public static String findstring(String a,String b,String c) 
 	{
-		if(a.compareTo(b)>0&&a.compareTo(c)>0) 
+		String max = a;
+		if(b.compareTo(max)>0) 
 		{
-			return a;
+			max= b;
 		}
-		 else if(b.compareTo(a)>0&&b.compareTo(c)>0) 
+		if(c.compareTo(max)>0) 
 		{
-			return b;
+			max = c;
 		}
-		 else 
-		 {
-			 return c;
-		 }
+		return max;
 	}
 }
