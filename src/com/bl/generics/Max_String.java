@@ -6,6 +6,7 @@ public class Max_String {
 		String a = "Apple";
 		String b = "Peach";
 		String c = "Banana";
+		
 		String obj=findstring(a, b, c);
 		System.out.println("Maximum String is :"+obj);
 		
